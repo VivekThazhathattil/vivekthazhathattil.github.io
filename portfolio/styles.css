@@ -1,0 +1,86 @@
+/* Color reference:
+ * Yellow crayola: #FFF07C
+ * Screamin green: #80FF72
+ * Sky blue crayola: #7EE8FA
+ * Baby pink: #EEC0C6
+ * New York Pink: #E58C8A
+ * dark gray: #121212
+ */
+:root{
+	background-color: #121212;
+	font-family: "Noto Sans", sans-serif;
+	color: white;
+}
+a{
+	text-decoration: none;
+}
+.main-menu-text{
+	text-align: center;
+	width: 20%;
+	height: 15%
+	padding: 2.5% 5% 2.5% 5%;
+	align-self: center;
+	justify-self: center;
+}
+
+.auto-margin{
+	margin: auto;
+}
+.manual-margin{
+	margin: 0.5%;
+}
+
+.text-color-sky-blue-crayola{
+	color: #7EE8FA;
+}
+.text-color-baby-pink{
+	color: #EEC0C6;
+}
+.text-color-screamin-green{
+	color: #80FF72;
+}
+
+.add-border{
+	border-style: solid;
+	border-color: white;
+	border-width: 2px;
+	border-radius: 10px;
+}
+
+#clickable-my-projects:hover{
+	color: #EEC0C6;
+}
+
+#clickable-about-me:hover{
+	color: #EEC0C6;
+}
+
+.main-container{
+	display: flex;
+	flex-direction: rows;
+	justify-content: center;
+}
+
+.hr-props{
+	width: 75%;
+	border-width: 1px;
+	border-radius: 1px;
+	border-style: solid;
+	border-color: #FFF07C;
+}
+#content-container{
+	width: 60%;
+	height: 50%;
+	justify-self: center;
+	align-self: center;
+	margin: auto;
+}
+#about-me-container{
+	display: none;
+}
+#my-projects-container{
+	display: none;
+}
+#default-text{
+	display: none;
+}
