@@ -19,8 +19,6 @@
 #tribute-info{
 	display: flex;
 	flex-direction:column;
-	justify-content: center;
-	align-items: flex-start;
 	text-align: justify;
 	width: 80%;
 	padding: 1%;
@@ -32,4 +30,12 @@
 	justify-content: center;
 	align-items: center;
 	margin:auto;
+}
+img{
+	max-width: 100%;
+}
+.show-borders{
+	border-style: solid;
+	border-width: 5px;
+	border-color: black;
 }
