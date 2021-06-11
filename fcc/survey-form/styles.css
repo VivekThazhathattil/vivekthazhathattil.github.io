@@ -1,0 +1,80 @@
+:root{
+	background-color: #ffffff;
+  	font-family: 'Noto Sans', Arial, sans-serif;
+	line-height: 1.5;
+	color: white;
+	font-size: 1.5vw;
+}
+.bg-image{
+	position: fixed;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+}
+.color-bg{
+	position: fixed;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	background-color: #868B8F;
+	opacity: 80%;
+}
+.main-container{
+	position: absolute;
+	top: 10%;
+	margin: 0% 10% 0% 10%;
+	background-color: #857B73;
+	border-radius: 2%;
+	opacity: 90%;
+}
+#title{
+	text-align: center;
+}
+#description{
+	text-align: justify;
+	padding: 2%;
+}
+#survey-form{
+	display: flex;
+	flex-direction: column;
+}
+/**{ border:dashed 1px black; }*/
+#survey-form{
+	justify-content: center;
+	align-items: center;
+}
+.flex-class{
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+}
+#name{
+	border: 1px solid #ced4da;
+}
+.form-group{
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+}
+.text-field{
+	font-size: 2vw;
+}
+.text-label{
+	font-size: 2vw;
+}
+#text-area{
+	width: 50%;
+	height: 10vw;
+	border-radius: 1%;
+	border-width: 5px;
+	border-color: #868B8F;
+}
+#submit{
+	padding: 0.75rem;
+	border-radius: 5%;
+	cursor: pointer;
+	margin: 5%;
+	background-color: #1B84CF;
+}

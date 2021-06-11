@@ -1,0 +1,133 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title> Survey form </title>
+		<link rel="stylesheet" href="styles.css" type="text/css" media="all" />
+	</head>
+	<body class="full-page">
+		<img class="bg-image" src="https://i.ytimg.com/vi/l1Cnz4Jeq5Q/maxresdefault.jpg" alt="blurred office environment">
+		<div class="color-bg">
+		</div>
+		<div class="main-container">
+			<h1 id="title">COVID-19 Self Assessment</h1>
+			<p id="description">After you fill out this order request, we will contact you to go over details and availability before the order is completed. If you would like faster service and direct information on current stock and pricing, please contact us at (123) 456 7890 or no_reply@example.com.</p>
+			<form id="survey-form">
+				<label 
+					id="name-label" 
+					class="flex-class" 
+					for="name">
+					<p class="text-label"> Name: </p> 
+					<input 
+						type="text" 
+						class="text-field" 
+						name="name" 
+						id="name" 
+						placeholder="Enter your name" 
+						required/>
+				</label>
+				<label 
+					id="email-label" 
+					class="flex-class" 
+					for="email">
+					<p class="text-label"> Email: </p>
+					<input 
+						type="email" 
+						class="text-field" 
+						name="email" 
+						id="email" 
+						placeholder="Enter your email" 
+						required
+						/>
+				</label>
+				<label 
+					id="number-label" 
+					class="flex-class" 
+					for="age">
+					<p class="text-label"> Age: </p> 
+					<input 
+						type="number" 
+						class="text-field" 
+						name="age" 
+						id="number" 
+						min="18"
+						max="120"
+						placeholder="Enter your age" 
+						/>
+				</label>
+				<label 
+					id="quarantine-status" 
+					class="flex-class" 
+					for="q-stat">
+					<p class="text-label"> What is your quarantine status? </p>
+					<select class="text-field" id="dropdown" name="q-stat">
+						<option value="no-quarantine">Not quarantined</option>
+						<option value="self-quarantine">Self quarantined</option>
+						<option value="quarantine">Quarantined</option>
+					</select>
+				</label>
+				<div class="form-group">
+					<p class="text-label"> What is your current vaccination status? </p>
+					<label>
+						<input 
+				     			name="vaccination-status"
+							value="fully-vaccinated"
+							type="radio"
+							checked
+							/>Fully vaccinated
+					</label>
+					<label>
+						<input
+							name="vaccination-status"
+							value="partially-vaccinated"
+							type="radio"
+							/>Partially vaccinated
+					</label>
+					<label>
+						<input
+							name="vaccination-status"
+							value="not-vaccinated"
+							type="radio"
+							/>Not vaccinated
+					</label>
+				</div>
+				<div class="form-group">
+					<p class="text-label">Do you have any of these symptoms?</p>
+					<label>
+						<input 
+					   		name="symptoms"
+							value="chest-pain"
+							type="checkbox"
+							/>Chest pain
+					</label>
+					<label>
+						<input 
+					   		name="symptoms"
+							value="disorientation"
+							type="checkbox"
+							/>Disorientation
+					</label>
+					<label>
+						<input 
+					   		name="symptoms"
+							value="slurred-speech"
+							type="checkbox"
+							/>Slurred speech
+					</label>
+					<label>
+						<input 
+					   		name="symptoms"
+							value="dehydration"
+							type="checkbox"
+							/>Dehydration
+					</label>
+				</div>
+				<p class="text-label">Any comments or suggestions?</p>
+				<textarea id="text-area" placeholder="Enter your comment here..."></textarea>
+				<button id="submit" class="text-label" name="submit">Submit</button>
+			</form>
+		</div>
+	</body>
+	<footer>
+	</footer>
+</html>
