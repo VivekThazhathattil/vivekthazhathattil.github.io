@@ -3,3 +3,4 @@
 [portfolio](./portfolio/index.html)
 
 [fcc/tribute-page](./fcc/tribute-page/index.html)
+[fcc/technical-documentation](./fcc/technical-documentation/index.html)

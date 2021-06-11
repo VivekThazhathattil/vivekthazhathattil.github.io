@@ -1,0 +1,123 @@
+<!doctype html>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title> Technical Documentation: Xournalpp </title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<link rel="stylesheet" href="styles.css" type="text/css" media="all" />
+	</head>
+	<body>
+		<div id="main-container">
+			<nav id="navbar">
+				<header><h1 id="navbar-title"> GDScript Documentation </h1></header>
+				<hr>
+				<a class="nav-link" href="#Introduction"><h4 class="navbar-item">Introduction</h4> </a>
+				<a class="nav-link" href="#Language"><h4 class="navbar-item">Language </h4></a>
+				<a class="nav-link" href="#built-in_types"><h4 class="navbar-item">Built-in types </h4></a>
+				<a class="nav-link" href="#data"><h4 class="navbar-item">Data</h4></a>
+				<a class="nav-link" href="#duck_typing"><h4 class="navbar-item">Duck typing</h4></a>
+				<a class="nav-link" href="#references"><h4 class="navbar-item">References</h4></a>
+			</nav>
+			<main id="main-doc">
+				<section class="main-section" id="Introduction">
+					<header><h2>Introduction</h2></header>
+					<p>GDScript is a high-level, dynamically typed programming language used to create content. It uses a syntax similar to Python (blocks are indent-based and many keywords are similar). Its goal is to be optimized for and tightly integrated with Godot Engine, allowing great flexibility for content creation and integration.</p>
+				</section>
+				<section class="main-section" id="Language">
+					<header><h2>Language</h2></header>
+					<p>In the following, an overview is given to GDScript. Details, such as which methods are available to arrays or other objects, should be looked up in the linked class descriptions.</p>
+					<h3>Identifiers</h3>
+					<p>Any string that restricts itself to alphabetic characters (<code>a</code> to <code>z</code> and <code>A</code> to <code>Z</code>), digits (<code>0</code> to <code>9</code>) and <code>_</code> qualifies as an identifier. Additionally, identifiers must not begin with a digit. Identifiers are case-sensitive (foo is different from FOO).</p>
+					<h3>Keywords</h3>
+					<p>The following is the list of keywords supported by the language. Since keywords are reserved words (tokens), they can't be used as identifiers. Operators (like in, not, and or or) and names of built-in types as listed in the following sections are also reserved.</p>
+					<p>Keywords are defined in the GDScript tokenizer in case you want to take a look under the hood.</p>
+				</section>
+				<section class="main-section" id="built-in_types">
+					<header><h2>Built-in types</h2></header>
+					<p>Built-in types are stack-allocated. They are passed as values. This means a copy is created on each assignment or when passing them as arguments to functions. The only exceptions are Arrays and Dictionaries, which are passed by reference so they are shared. (Pooled arrays such as PoolByteArray are still passed as values.)</p>
+
+					<h3>Basic built-in types </h3>
+					<p>A variable in GDScript can be assigned to several built-in types.</p>
+
+					<h4>null</h4>
+					<p>null is an empty data type that contains no information and can not be assigned any other value.</p>
+
+					<h4>bool</h4>
+					<p>Short for "boolean", it can only contain true or false.</p>
+
+					<h4>int</h4>
+					<p>Short for "integer", it stores whole numbers (positive and negative). It is stored as a 64-bit value, equivalent to "int64_t" in C++.</p>
+
+					<h4>float</h4>
+					<p>Stores real numbers, including decimals, using floating-point values. It is stored as a 64-bit value, equivalent to "double" in C++. Note: Currently, data structures such as Vector2, Vector3, and PoolRealArray store 32-bit single-precision "float" values.</p>
+
+					<h4>String</h4>
+					<p>A sequence of characters in Unicode format. Strings can contain the following escape sequences:</p4>
+
+
+				</section>
+				<section class="main-section" id="data">
+					<header><h2>Data</h2></header>
+					<h3>Variables</h3>
+					<p>Variables
+					Variables can exist as class members or local to functions. They are created with the var keyword and may, optionally, be assigned a value upon initialization.</p>
+					<code>var a # Data type is 'null' by default.
+var b = 5
+var c = 3.8
+var d = b + c # Variables are always initialized in order.</code>
+					<p>Variables can optionally have a type specification. When a type is specified, the variable will be forced to have always that same type, and trying to assign an incompatible value will raise an error.</p>
+					<p>Types are specified in the variable declaration using a : (colon) symbol after the variable name, followed by the type.</p>
+					<code>var my_vector2: Vector2
+var my_node: Node = Sprite.new()</code>
+					<p>If the variable is initialized within the declaration, the type can be inferred, so it's possible to omit the type name:
+
+					</p>
+					<code>var my_vector2 := Vector2() # 'my_vector2' is of type 'Vector2'.
+						var my_node := Sprite.new() # 'my_node' is of type 'Sprite'.</code>
+					<p>Type inference is only possible if the assigned value has a defined type, otherwise it will raise an error.</p>
+					<p>Valid types are:</p>
+					<ul>
+						<li>Built-in types (Array, Vector2, int, String, etc.).</li>
+						<li>Engine classes (Node, Resource, Reference, etc.).</li>
+						<li>Constant names if they contain a script resource (MyScript if you declared const MyScript = preload("res://my_script.gd")).</li>
+						<li>Other classes in the same script, respecting scope (InnerClass.NestedClass if you declared class NestedClass inside the class InnerClass in the same scope).</li>
+						<li>Script classes declared with the class_name keyword.</li>
+					</ul>
+
+				</section>
+				<section class="main-section" id="duck_typing">
+					<header><h2>Duck typing</h2></header>
+					<p>One of the most difficult concepts to grasp when moving from a statically typed language to a dynamic one is duck typing. Duck typing makes overall code design much simpler and straightforward to write, but it's not obvious how it works.</p>
+					<p>As an example, imagine a situation where a big rock is falling down a tunnel, smashing everything on its way. The code for the rock, in a statically typed language would be something like:</p>
+					<code> 
+						void BigRollingRock::on_object_hit(Smashable *entity) {
+	entity->smash();
+}</code>
+					<p>This way, everything that can be smashed by a rock would have to inherit Smashable. If a character, enemy, piece of furniture, small rock were all smashable, they would need to inherit from the class Smashable, possibly requiring multiple inheritance. If multiple inheritance was undesired, then they would have to inherit a common class like Entity. Yet, it would not be very elegant to add a virtual method smash() to Entity only if a few of them can be smashed.</p>
+
+					<p>With dynamically typed languages, this is not a problem. Duck typing makes sure you only have to define a smash() function where required and that's it. No need to consider inheritance, base classes, etc.</p>
+					<code>
+						func _on_object_hit(object):
+    object.smash()
+					</code>
+					<p>And that's it. If the object that hit the big rock has a smash() method, it will be called. No need for inheritance or polymorphism. Dynamically typed languages only care about the instance having the desired method or member, not what it inherits or the class type. The definition of Duck Typing should make this clearer:</p>
+					<em>"When I see a bird that walks like a duck and swims like a duck and quacks like a duck, I call that bird a duck"</em>
+					<p>In this case, it translates to:</p>
+					<em>"If the object can be smashed, don't care what it is, just smash it."</em>
+
+				</section>
+				<section class="main-section" id="references">
+					<header><h2>References</h2></header>
+					<ul>
+						<li>All the documentation in this page is taken from <a class="mark-link" href="https://docs.godotengine.org/en/stable/getting_started/scripting/gdscript/gdscript_advanced.html#duck-typing" target="_blank"> GODOT DOCS</a>.</li>
+					</ul>
+				</section>
+			</main>
+		</div>
+	</body>
+	<footer>
+	</footer>
+</html>
