@@ -43,7 +43,9 @@ h3{
 	position: absolute;
 	left: 30%;
 	padding: 5%;
-	width: 60%
+	width: 60%;
+	justify-content: center;
+	text-align: justify;
 }
 #main-section{
 	padding: 5%;
@@ -55,11 +57,13 @@ h3{
 @media (max-width: 815px){
 	#main-doc{
 		position: absolute;
-		left: 0%;
 		top: 75%;
-		padding: 10%;
+		left: 12.5%;
+		margin: auto;
+		padding: 5%;
 		width: 75%;
 		min-width: 60%;
+		text-align: justify;
 	}
 	#navbar{
 		position: absolute;
