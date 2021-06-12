@@ -7,3 +7,5 @@ This is the repo for my personal webpage (currently under construction)
 [fcc/technical-documentation](./fcc/technical-documentation/index.html)
 
 [fcc/survey-form](./fcc/survey-form/index.html)
+
+[fcc/product-landing-page](./fcc/product-landing-page/index.html)

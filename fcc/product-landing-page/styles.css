@@ -13,6 +13,9 @@
 	color: var(--davys-grey);
   	font-family: 'Noto Sans', Arial, sans-serif;
 }
+#title-with-img{
+	align-self: center;
+}
 #product-title:hover{
 	transform: scale(1.05);
 	color: var(--ruby-red);
@@ -29,6 +32,7 @@
 	flex-direction: row;
 	justify-content: space-between;
 	border-bottom: solid var(--ruby-red) 2px;
+	background-color: white;
 }
 #title-with-img{
 	display: flex;
@@ -64,13 +68,15 @@ a:hover{
 	background-position: 0%;
 	width: 80%;
 	margin: 10%;
-	font-size: 100px;
 
 	animation: clouds-moving infinite 220s;
 	animation-fill-mode: forwards;
 	animation-play-state: running;
 	animation-timing-function: linear;
 	text-align: center;
+}
+.big-text{
+	font-size: 100px;
 }
 @keyframes clouds-moving{
 	0%{
@@ -86,16 +92,84 @@ a:hover{
 #main{
 	position: absolute;
 	top: 10%;
+	width: 100%;
 	display: grid;
 	place-content: center;
 	text-align: center;
-	z-index: 0;
+	z-index: -1;
 }
 #about-bg{
 	background-color:
 }
-#about-text{
+#about-container{
+	text-align: justify;
 }
 #main-container{
 }
-/**{border: dashed 1px black;}*/
+.ab{border: dashed 1px black;}
+#about-text{
+	width:75%;
+	margin: auto;
+	background-color: var(--davys-grey);
+	color: white;
+	border: solid 5px;
+	border-radius: 10px;
+	padding: 2%;
+	font-size: 20px;
+}
+#video{
+	width: 40vw;
+	height: 20vw;
+}
+.red-font{
+	color: var(--ruby-red);
+}
+#feature-container{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	text-align: left;
+	margin: auto;
+}
+@media (max-width: 815px){
+	#header-container{
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		top: 0%;
+		left: 0%;
+		width: 100%;
+	}
+	#header{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		border-bottom: solid var(--ruby-red) 2px;
+		background-color: white;
+	}
+	#nav-bar{
+		min-width: 50%;
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		font-size: 10px;
+		padding: 0%;
+	}
+	#about-container{
+		text-align: justify;
+		width: 100%;
+	}
+	#main{
+		position: absolute;
+		top: 60%;
+		width: 100%;
+		display: grid;
+		place-content: center;
+		text-align: center;
+		z-index: -1;
+	}
+	.big-text{
+		font-size: 50px;
+	}
+}
