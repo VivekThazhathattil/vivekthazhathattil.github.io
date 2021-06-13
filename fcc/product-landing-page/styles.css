@@ -8,7 +8,7 @@
 
 	/*units*/
 	--gap: 1rem;
-	--min: 15ch;
+	--min: 5ch;
 	background-color: white;
 	color: var(--davys-grey);
   	font-family: 'Noto Sans', Arial, sans-serif;
@@ -108,7 +108,7 @@ a:hover{
 }
 .ab{border: dashed 1px black;}
 #about-text{
-	width:75%;
+	width:90%;
 	margin: auto;
 	background-color: var(--davys-grey);
 	color: white;
@@ -118,8 +118,8 @@ a:hover{
 	font-size: 20px;
 }
 #video{
-	width: 40vw;
-	height: 20vw;
+	width: 60vw;
+	height: 40vw;
 }
 .red-font{
 	color: var(--ruby-red);
@@ -157,7 +157,7 @@ a:hover{
 		padding: 0%;
 	}
 	#about-container{
-		text-align: justify;
+		text-align: left;
 		width: 100%;
 	}
 	#main{
@@ -171,5 +171,13 @@ a:hover{
 	}
 	.big-text{
 		font-size: 50px;
+	}
+	#video{
+		width: 80vw;
+		height: 40vw;
+	}
+	#header-img{
+		width: 10vw;
+		height: 10vw;
 	}
 }
