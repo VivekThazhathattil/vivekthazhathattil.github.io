@@ -126,7 +126,6 @@ a{
 	border-radius: 10px;
 }
 .showcase-card:hover{
-	border: solid var(--silver-pink) 5px;
 	transform: scale(1.1);
 	transition: 0.1s;
 }
