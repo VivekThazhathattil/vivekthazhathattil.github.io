@@ -113,11 +113,11 @@
 	max-width: 100%;
 }
 /* MOBILES and TABLETS */
-@media (max-width: 815px){
+@media (max-width: 850px){
 	#main-container{
 		display: flex;
 		flex-direction: column;
-		justify-content: space-around;
+		justify-content: flex-start;
 		height: 100%;
 		margin: auto;
 	}
@@ -129,9 +129,23 @@
 		border-radius: 10px;
 	}
 	#showcase-container{
-		height: 100%;
-		width: 100%;
+		height: auto;
+		width: auto;
 		border: solid var(--text-black) 2px;
 		border-radius: 10px;
+	}
+	#showcase-items{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		margin: 0px 15px 15px 15px;
+		flex: 1;
+	}
+	.showcase-card{
+		width: auto;
+		height: stretch;
+		margin: 15px 15px 15px 15px;
+		background-color: white;
+		padding: 20px 20px 20px 20px;
 	}
 }
