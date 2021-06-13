@@ -5,6 +5,7 @@
 	--silver-pink: #CEB5B7;
 	--powder-blue: #B5D6D6;
 	--celeste: #9CF6F6;
+	--olive: #3D9970;
 	--text-black: #1F1F1F;
 
 	background-color: white;
@@ -13,15 +14,26 @@
 	line-height: 2;
 }
 /* DESKTOPS AND LAPTOPS */
+a{
+	text-decoration: none;
+	color: var(--text-black);
+}
+.body{
+}
+.main{
+}
 #main-container{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
-	height: 100%;
+	height: 90vh;
 	margin: auto;
+	max-width: 90vw;
+	max-height: 90vh;
 }
 #about-container{
 	width: 300px;
+	max-height: 800px;
 	height: auto;
 	background-color: white;
 	border: solid var(--text-black) 2px;
@@ -53,9 +65,12 @@
 	width: 100%;
 }
 .avatar{
-	padding: 5%;
+	margin: 10px;
 	width: 50%;
+	max-width: 200px;
 	border-radius: 500px;
+	border: solid var(--text-black) 2px;
+	background-color: white;
 }
 .contact-icon{
 	width: 50px;
@@ -75,6 +90,7 @@
 .ab{border: dashed 1px black;}
 #showcase-container{
 	height: 100%;
+	max-height: 800px;
 	width: 800px;
 	display: flex;
 	flex-direction: column;
@@ -94,13 +110,9 @@
 	margin: 0px 15px 15px 15px;
 	flex: 1;
 }
+
 #projects-title{
 	margin: 15px 15px 15px 15px;
-}
-#showcase-items{
-	width: auto;
-	align-self: stretch;
-	height: auto;
 }
 .showcase-card{
 	width: 300px;
@@ -108,6 +120,12 @@
 	margin: 15px 15px 15px 15px;
 	background-color: white;
 	padding: 20px 20px 20px 20px;
+	border-radius: 10px;
+}
+.showcase-card:hover{
+	border: solid var(--silver-pink) 5px;
+	transform: scale(1.1);
+	transition: 0.1s;
 }
 .showcase-img{
 	max-width: 100%;
@@ -118,7 +136,7 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-start;
-		height: 100%;
+		height: auto;
 		margin: auto;
 	}
 	#about-container{
@@ -127,24 +145,28 @@
 		background-color: white;
 		border: solid var(--text-black) 2px;
 		border-radius: 10px;
+		flex: 1;
 	}
 	#showcase-container{
 		height: auto;
 		width: auto;
 		border: solid var(--text-black) 2px;
 		border-radius: 10px;
+		margin: 10px;
+		flex: 1;
 	}
 	#showcase-items{
 		display: flex;
 		flex-direction: column;
-		justify-content: space-evenly;
+	/*	justify-content: space-evenly;
 		margin: 0px 15px 15px 15px;
 		flex: 1;
+		*/
 	}
 	.showcase-card{
 		width: auto;
-		height: stretch;
-		margin: 15px 15px 15px 15px;
+		height: auto;
+		margin: 5px 5px 5px 5px;
 		background-color: white;
 		padding: 20px 20px 20px 20px;
 	}
