@@ -111,16 +111,23 @@ a{
 #showcase-items{
 	display: flex;
 	flex-direction: row;
-	justify-content: space-evenly;
+
+	overflow-x: auto;
+	-ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+
 	margin: 0px 15px 15px 15px;
 	flex: 1;
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
 }
 
 #projects-title{
 	margin: 15px 15px 15px 15px;
 }
 .showcase-card{
-	width: 300px;
+	min-width: 300px;
 	height: stretch;
 	margin: 15px 15px 15px 15px;
 	background-color: white;
@@ -168,6 +175,7 @@ a{
 		*/
 	}
 	.showcase-card{
+		min-width: auto;
 		width: auto;
 		height: auto;
 		margin: 5px 5px 5px 5px;
