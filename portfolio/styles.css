@@ -28,7 +28,6 @@ a{
 	justify-content: space-evenly;
 	margin: auto;
 	max-width: 90vw;
-	max-height: 100vh;
 }
 #about-container{
 	width: 300px;
@@ -37,17 +36,19 @@ a{
 	background-color: white;
 	border: solid var(--text-black) 2px;
 	border-radius: 10px;
+
 }
 #about-container:hover{
 	 /*background-image: linear-gradient(45deg, var(--olive), var(--powder-blue));*/
-	background-color: white;
 	transition: 0.3s;
 }
 #default-container{
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
+	transition: transform 0.8s;
 	height: 100%;
 }
 #text-container{
@@ -80,7 +81,7 @@ a{
 	animation-iteration-count: infinite;
 }
 .contact-icon:hover{
-	transform: scale(1.1);
+	animation-play-state: paused;
 }
 .contact-icon:active{
 	filter: blur(1px);
