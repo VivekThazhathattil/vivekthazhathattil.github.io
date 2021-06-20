@@ -9,6 +9,7 @@
 	--text-black: #1F1F1F;
 
 	background-color: white;
+	background-image: url('img/bg.svg');
 	font-family: "Noto Sans", sans-serif;
 	color: var(--text-black);
 	line-height: 2;
@@ -17,6 +18,12 @@
 a{
 	text-decoration: none;
 	color: var(--text-black);
+}
+p, li, h1, h2, h3, h4{
+	-webkit-user-select: none; /* Safari */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+/Edge */
+	user-select: none; /* Standard */
 }
 .body{
 }
@@ -73,6 +80,37 @@ a{
 	border: solid var(--text-black) 2px;
 	background-color: white;
 }
+.fade-in{
+  animation: fadeIn 1s;
+  -webkit-animation: fadeIn 1s;
+  -moz-animation: fadeIn 1s;
+  -o-animation: fadeIn 1s;
+  -ms-animation: fadeIn 1s;
+}
+@keyframes fadeIn {
+  0% {opacity:0; filter: blur(8px);}
+  100% {opacity:1; filter: blur(0px);}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
 .contact-icon{
 	width: 50px;
 	height: 50px;
@@ -99,6 +137,7 @@ a{
 /**{border: dashed 1px black;}*/
 .ab{border: dashed 1px black;}
 #showcase-container{
+	background-color: white;
 	max-height: 800px;
 	width: 800px;
 	display: flex;
@@ -109,7 +148,6 @@ a{
 }
 #showcase-container:hover{
 	/*background-image: linear-gradient(45deg, var(--light-coral), var(--celeste));*/
-	background-color: white;
 	transition: 0.3s;
 }
 #showcase-items{
@@ -158,6 +196,7 @@ a{
 	margin: 15px 15px 15px 15px;
 }
 .showcase-card{
+	opacity: 0.8;
 	min-width: 300px;
 	height: stretch;
 	margin: 15px 15px 15px 15px;
@@ -166,8 +205,9 @@ a{
 	border-radius: 10px;
 }
 .showcase-card:hover{
+	opacity: 1;
 	transform: scale(1.1);
-	transition: 0.1s;
+	transition: 0.5s;
 }
 .showcase-img{
 	max-width: 100%;
