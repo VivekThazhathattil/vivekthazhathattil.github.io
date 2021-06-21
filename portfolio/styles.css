@@ -115,6 +115,9 @@ p, li, h1, h2, h3, h4{
 	width: 50px;
 	height: 50px;
 }
+.contact-icon:focus{
+	outline: none;
+}
 .contact-icon:hover{
 	transform: rotatez(360deg);
 	transition: transform 0.5s;
@@ -130,7 +133,9 @@ p, li, h1, h2, h3, h4{
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
 }
-
+.card:focus{
+	outline: none;
+}
 /* On mouse-over, add a deeper shadow */
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
