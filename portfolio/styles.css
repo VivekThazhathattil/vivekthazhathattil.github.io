@@ -10,6 +10,8 @@
 
 	background-color: white;
 	background-image: url('img/bg.svg');
+	background-repeat: no-repeat;
+	background-size: cover;
 	font-family: "Noto Sans", sans-serif;
 	color: var(--text-black);
 	line-height: 2;
@@ -36,7 +38,15 @@ p, li, h1, h2, h3, h4{
 	margin: auto;
 	max-width: 90vw;
 }
+.text-list{
+	background-color: #FAE8FC;
+	margin: 10px;
+	border-radius: 10px;
+}
 #about-container{
+	background-image: url('img/bg_project.svg');
+	background-repeat: no-repeat;
+	background-size: cover;
 	width: 300px;
 	max-height: 800px;
 	height: auto;
@@ -144,6 +154,9 @@ p, li, h1, h2, h3, h4{
 .ab{border: dashed 1px black;}
 #showcase-container{
 	background-color: white;
+	background-image: url('img/bg_project.svg');
+	background-repeat: no-repeat;
+	background-size: cover;
 	max-height: 800px;
 	width: 800px;
 	display: flex;
@@ -202,18 +215,19 @@ p, li, h1, h2, h3, h4{
 	margin: 15px 15px 15px 15px;
 }
 .showcase-card{
-	opacity: 0.8;
+	opacity: 0.95;
 	min-width: 300px;
 	height: stretch;
 	margin: 15px 15px 15px 15px;
 	background-color: white;
+	background-image: url('img/bg_cards.svg');
 	padding: 20px 20px 20px 20px;
 	border-radius: 10px;
 }
 .showcase-card:hover{
 	opacity: 1;
 	transform: scale(1.1);
-	transition: 0.5s;
+	transition: 0.1s;
 }
 .showcase-img{
 	max-width: 100%;
