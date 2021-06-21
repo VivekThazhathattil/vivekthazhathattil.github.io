@@ -51,7 +51,6 @@ p, li, h1, h2, h3, h4{
 	max-height: 800px;
 	height: auto;
 	background-color: white;
-	border: solid var(--text-black) 2px;
 	border-radius: 10px;
 
 }
@@ -162,7 +161,6 @@ p, li, h1, h2, h3, h4{
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
-	border: solid var(--text-black) 2px;
 	border-radius: 10px;
 }
 #showcase-container:hover{
@@ -245,14 +243,12 @@ p, li, h1, h2, h3, h4{
 		width: 100%;
 		height: auto;
 		background-color: white;
-		border: solid var(--text-black) 2px;
 		border-radius: 10px;
 		flex: 1;
 	}
 	#showcase-container{
 		height: auto;
 		width: auto;
-		border: solid var(--text-black) 2px;
 		border-radius: 10px;
 		margin: 10px 0px 0px 0px;
 		flex: 1;
