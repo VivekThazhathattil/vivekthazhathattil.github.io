@@ -12,7 +12,7 @@
 	background-image: url('img/bg.svg');
 	background-repeat: no-repeat;
 	background-size: cover;
-	font-family: "Noto Sans", sans-serif;
+	font-family: "Roboto", "Noto Sans", sans-serif;
 	color: var(--text-black);
 	line-height: 2;
 }
@@ -39,7 +39,6 @@ p, li, h1, h2, h3, h4{
 	max-width: 90vw;
 }
 .text-list{
-	background-color: #FAE8FC;
 	margin: 10px;
 	border-radius: 10px;
 }
@@ -87,7 +86,6 @@ p, li, h1, h2, h3, h4{
 	max-width: 200px;
 	border-radius: 500px;
 	border: solid var(--text-black) 2px;
-	background-color: white;
 }
 .fade-in{
   animation: fadeIn 1s;
@@ -189,6 +187,7 @@ p, li, h1, h2, h3, h4{
 	animation-name: pulsate;
 	animation-duration: 2s;
 	animation-iteration-count: infinite;
+	margin: 10px;
 }
 @keyframes pulsate{
 	0% { transform: scale(1); }
