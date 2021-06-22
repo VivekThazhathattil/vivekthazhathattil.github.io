@@ -1,0 +1,3 @@
+[submodule "FEN-to-img"]
+	path = FEN-to-img
+	url = https://github.com/VivekThazhathattil/FEN-to-img

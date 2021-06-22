@@ -4,6 +4,8 @@ This is the repo for my personal webpage (currently under construction)
 
 [blindfold-chess-trainer](./chess-blindfold-trainer/)
 
+[FEN to image](./FEN-to-img/)
+
 [fcc/tribute-page](./fcc/tribute-page/)
 
 [fcc/technical-documentation](./fcc/technical-documentation/)
