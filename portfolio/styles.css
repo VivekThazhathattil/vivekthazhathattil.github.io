@@ -46,6 +46,7 @@ p, li, h1, h2, h3, h4{
 	background-image: url('img/bg_project.svg');
 	background-repeat: no-repeat;
 	background-size: cover;
+
 	width: 300px;
 	max-height: 800px;
 	height: auto;
@@ -61,7 +62,7 @@ p, li, h1, h2, h3, h4{
 	position: relative;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: space-around;
 	align-items: center;
 	transition: transform 0.8s;
 	height: 100%;
@@ -82,7 +83,6 @@ p, li, h1, h2, h3, h4{
 	flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
-	height: 100px;
 	width: 100%;
 }
 .avatar{
