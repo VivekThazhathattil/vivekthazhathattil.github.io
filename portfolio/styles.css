@@ -192,8 +192,14 @@ p, li, h1, h2, h3, h4{
 }
 .project-header{
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+.button-array{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
 }
 .code-icon{
 	max-width: 50px;

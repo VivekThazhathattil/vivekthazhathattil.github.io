@@ -6,6 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" href="styles.css" type="text/css" media="all" />
+		<script type="text/javascript" src="script.js"></script>
 	</head>
 	<body class="body">
 		<header>
@@ -74,14 +75,23 @@
 					<div id="showcase-items" class="hide-scrollbar">
 						<div id="show-case-item0" class="showcase-card card">
 							<h2 class="project-header">VTOL UAV Design
-								<a 
-									href="ot_res/vtol_uav_report.pdf"
-									target="_blank">
-									<img 
-										src="img/pdf-icon.svg"
-										alt="code icon"
-										class="code-icon">
-								</a>
+								<div class="button-array">
+									<a 
+										href="ot_res/vtol_uav_report.pdf"
+										target="_blank">
+										<img 
+											src="img/pdf-icon.svg"
+											alt="code icon"
+											class="code-icon">
+									</a>
+									<span 
+											onclick="transitionToPage('proj_vtol.html')">
+										<img 
+											src="img/html.svg"
+											alt="html icon"
+											class="code-icon">
+									</span>
+								</div>
 							</h2>
 							<hr>
 							<ul>
@@ -166,9 +176,8 @@
 							</ul>
 						</div> <!-- show-case-item3 -->
 						<div id="show-case-item4" class="showcase-card card">
-							<h2 class="project-header"> Spoken Numbers Android App
-								<a 
-									href="https://github.com/VivekThazhathattil/Spoken-numbers"
+							<h2 class="project-header"> DékaDico<a 
+									href="https://github.com/VivekThazhathattil/dekadico"
 									target="_blank">
 									<img 
 										src="img/code_icon.svg"
@@ -186,7 +195,7 @@
 							</ul>
 						</div> <!-- show-case-item4 -->
 						<div id="show-case-item5" class="showcase-card card">
-							<h2 class="project-header">Hand Cricket Game
+							<h2 class="project-header">Android Cricket Game
 								<a 
 									href="https://github.com/VivekThazhathattil/godot_hawkrik"
 									target="_blank">

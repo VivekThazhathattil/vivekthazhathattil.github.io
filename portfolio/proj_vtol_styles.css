@@ -1,0 +1,64 @@
+:root{
+	background-image: url("img/proj_vtol/wave.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+}
+h1{
+	font-size: 75px;
+}
+body { 
+   opacity: 0;
+   transition: opacity .5s;
+}
+.fade-in{
+  animation: fadeIn 1s;
+  -webkit-animation: fadeIn 1s;
+  -moz-animation: fadeIn 1s;
+  -o-animation: fadeIn 1s;
+  -ms-animation: fadeIn 1s;
+}
+@keyframes fadeIn {
+  0% {opacity:0; filter: blur(8px);}
+  100% {opacity:1; filter: blur(0px);}
+}
+#front-page{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	margin: 20px 20px 20px 20px;
+}
+#title-container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	align-self: flex-start;
+}
+#side-container{
+	width: 50vw;
+}
+.big-font{
+	font-size: 25px;
+}
+#uav{
+	max-width: 50vw;
+	max-height: 50vh;
+}
+#home-button{
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	max-width: 50px;
+	max-height: 50px;
+}
+@media only screen and (max-width: 850px){
+	#front-page{
+		flex-direction: column;
+		justify-content: center;
+	}
+	#side-container{
+		width: auto;
+	}
+}
