@@ -1,3 +1,6 @@
 [submodule "FEN-to-img"]
 	path = FEN-to-img
 	url = https://github.com/VivekThazhathattil/FEN-to-img
+[submodule "Ozhukk"]
+	path = Ozhukk
+	url = https://github.com/VivekThazhathattil/Ozhukk
