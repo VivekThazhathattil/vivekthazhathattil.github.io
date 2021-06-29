@@ -102,6 +102,8 @@ $(document).ready( ()=>{
 
 		var h= Math.max( body.scrollHeight, body.offsetHeight,
                        html.clientHeight, html.scrollHeight, html.offsetHeight );
+		var w= Math.max( body.scrollWidth, body.offsetWidth,
+                       html.clientWidth, html.scrollWidth, html.offsetWidth );
 		if ($(window).width() < 850){
 			disp = "column";	
 			rot = "";
@@ -114,9 +116,10 @@ $(document).ready( ()=>{
 				"top" : "0",
 				"left" : "0",
 				"height" : h,
+				"width" : w,
 				"display" : "flex",
 				"flex-direction" : disp,
-				"justify-content" : "space-between",
+				"justify-content" : "flex-start",
 				"background-color" : pastelColors[i],
 				"z-index" : "5",
 			})
@@ -133,6 +136,22 @@ $(document).ready( ()=>{
 
 
 
+	$("#sub-content-1").append('<h2 id="progLangHeader">Programming Languages</h2>');
+	$("#sub-content-1").append('<div id="progLangContainer"> </div>');
+	$("#progLangContainer").append('<img class="skill1 good-size" src="img/skills/cpp.svg" />');
+	$("#progLangContainer").append('<img class="skill2 good-size" src="img/skills/python.svg" />');
+	$("#progLangContainer").append('<img class="skill3 good-size" src="img/skills/java.svg" />');
+	$("#progLangContainer").append('<img class="skill4 good-size" src="img/skills/js.svg" />');
+	$("#sub-content-1").append('<img class="skill5 good-size" src="img/skills/bash.svg" />');
+
+	/* escape button event */
+  $(document).on('keyup', function(event) {
+    if(event.key == "Escape") {
+			for(let i = 0; i < bookmarksArray.length; i++)
+				$("#fillpage-"+i.toString()).hide();
+			$("#main-container").show();
+    }
+  });
 
 	$("#close-button-0").click( () => {
 		$("#fillpage-0").hide();
