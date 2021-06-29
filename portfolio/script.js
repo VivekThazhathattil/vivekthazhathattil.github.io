@@ -156,6 +156,15 @@ $(document).ready( ()=>{
 	$("#progToolContainer").append('<img class="skill3 good-size" src="img/skills/godot.svg" />');
 	$("#progToolContainer").append('<img class="skill4 good-size" src="img/skills/react.svg" />');
 	$("#progToolContainer").append('<img class="skill5 good-size" src="img/skills/android_studio.svg" />');
+	$("#progToolContainer").append('<img class="skill6 good-size" src="img/skills/freecad.svg" />');
+	$("#progToolContainer").append('<img class="skill7 good-size" src="img/skills/inkscape.svg" />');
+	$("#progToolContainer").append('<img class="skill8 good-size" src="img/skills/gimp.svg" />');
+
+
+	$("#sub-content-2").append('<img class="skill0 good-size" src="img/skills/xournalpp.svg" />');
+	$("#sub-content-2").append('<img class="skill0 good-size" src="img/skills/zim.svg" />');
+	$("#sub-content-2").append('<img class="skill0 good-size" src="img/skills/stockfish.svg" />');
+	$("#sub-content-2").append('<img class="skill0 good-size" src="img/skills/gtimelog.svg" />');
 
 	$("#sub-content-3").append('<div id="hobby-main-container" class=""></div>');
 	$("#hobby-main-container").append('<div id="hobby-container1" class="card"></div>');
