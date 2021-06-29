@@ -54,9 +54,91 @@ p, li, h1, h2, h3, h4{
 	border-radius: 10px;
 
 }
+.plus-button:hover{
+	background-color: #E2F0CB;
+	transition: 0.3s;
+}
+.plus-button:active{
+	background-color: #C7CEEA;
+	transition: 0.3s;
+}
+.rotate90 {
+  transform: rotate(-90deg);
+  /* Legacy vendor prefixes that you probably don't need... */
+  /* Safari */
+  -webkit-transform: rotate(-90deg);
+  /* Firefox */
+  -moz-transform: rotate(-90deg);
+  /* IE */
+  -ms-transform: rotate(-90deg);
+  /* Opera */
+  -o-transform: rotate(-90deg);
+  /* Internet Explorer */
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+.bot_line{
+	border-bottom: solid white 2px;
+}
+.vertical_name{
+	color: white;
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+	font-size: 50px;
+  margin: 5px; 
+	white-space: nowrap;
+}
+
+.plus-button {
+	border: 2px solid lightgrey;
+	background-color: #FF9AA2;
+	font-size: 16px;
+	height: 2.5em;
+	width: 2.5em;
+	border-radius: 999px;
+	position: relative;
+
+	&:after,
+	&:before {
+		content: "";
+		display: block;
+		background-color: grey;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	&:before {
+		height: 1em;
+		width: 0.2em;
+	}
+
+	&:after {
+		height: 0.2em;
+		width: 1em;
+	}
+}
+
+.plus-button--small {
+	font-size: 12px;
+}
+
+.plus-button--large {
+	font-size: 22px;
+}
+.top-right{
+	position: fixed;
+	top: 0;
+}
 #about-container:hover{
 	 /*background-image: linear-gradient(45deg, var(--olive), var(--powder-blue));*/
 	transition: 0.3s;
+}
+.name-emphasis{
+	color: #FFFFFF;
 }
 #default-container{
 	position: relative;
@@ -92,16 +174,31 @@ p, li, h1, h2, h3, h4{
 	border-radius: 500px;
 	border: solid var(--text-black) 2px;
 }
+.subcontent{
+}
 .fade-in{
-  animation: fadeIn 1s;
-  -webkit-animation: fadeIn 1s;
-  -moz-animation: fadeIn 1s;
-  -o-animation: fadeIn 1s;
-  -ms-animation: fadeIn 1s;
+  animation: fadeIn 0.5s;
+  -webkit-animation: fadeIn 0.5s;
+  -moz-animation: fadeIn 0.5s;
+  -o-animation: fadeIn 0.5s;
+  -ms-animation: fadeIn 0.5s;
+}
+
+.fade-out{
+  animation: fadeOut 1s;
+  -webkit-animation: fadeOut 1s;
+  -moz-animation: fadeOut 1s;
+  -o-animation: fadeOut 1s;
+  -ms-animation: fadeOut 1s;
 }
 @keyframes fadeIn {
   0% {opacity:0; filter: blur(8px);}
   100% {opacity:1; filter: blur(0px);}
+}
+
+@keyframes fadeOut {
+  0% {opacity:1; filter: blur(0px);}
+  100% {opacity:0; filter: blur(8px);}
 }
 
 @-moz-keyframes fadeIn {
@@ -144,6 +241,15 @@ p, li, h1, h2, h3, h4{
 	opacity: 0.3;
 	margin: 10px;
 }
+.transparent-button{
+	background-color: transparent;
+	border: none;
+}
+.big-font{
+	font-size: 32px;
+	color: white;
+	text-align: center;
+}
 #resume-icon:hover{
 	opacity: 1;
 	transform: scale(1.2);
@@ -153,6 +259,9 @@ p, li, h1, h2, h3, h4{
   /* Add shadows to create the "card" effect */
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
+}
+.bookmark-item:hover{
+	transform: scale(1.2);
 }
 .card:focus{
 	outline: none;
@@ -245,9 +354,13 @@ p, li, h1, h2, h3, h4{
 	opacity: 1;
 	transform: scale(1.1);
 	transition: 0.1s;
+	z-index: 2;
 }
 .showcase-img{
 	max-width: 100%;
+}
+.round-edge{
+	border-radius: 5px;
 }
 /* MOBILES and TABLETS */
 @media only screen and (max-width: 850px){
@@ -288,4 +401,11 @@ p, li, h1, h2, h3, h4{
 		background-color: white;
 		padding: 20px 20px 20px 20px;
 	}
+	.showcase-card:hover{
+		opacity: 1;
+		transform: scale(1);
+		transition: 0.1s;
+		z-index: 0;
+	}
+
 }

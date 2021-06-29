@@ -95,45 +95,27 @@ $(document).mouseup(function(e){
 $(document).ready( ()=>{
 	init();
 	for(let i = 0; i < bookmarksArray.length; i++){
-		let disp = "row";
-		let rot = "rotate90";
-		var body = document.body,
-    html = document.documentElement;
-
-		var h= Math.max( body.scrollHeight, body.offsetHeight,
-                       html.clientHeight, html.scrollHeight, html.offsetHeight );
-		if ($(window).width() < 850){
-			disp = "column";	
-			rot = "";
-		}
-
-		console.log($(window).width());
-			$(main).append('<div id="fillpage-' + i.toString() + '" class="fillpage"></div>');
+			$(main).append('<div id="fillpage-' + i.toString() + '" class="ab"></div>');
 			$("#fillpage-" + i.toString()).css({
 				"position" : "absolute",
 				"top" : "0",
 				"left" : "0",
-				"height" : h,
+				"width" : "100%",
+				"height" : "100%",
 				"display" : "flex",
-				"flex-direction" : disp,
+				"flex-direction" : "row",
 				"justify-content" : "space-between",
 				"background-color" : pastelColors[i],
 				"z-index" : "5",
 			})
-		.append('<div id="vertical-name-' + i.toString() + '" class="vertical_name"> </div>')
+		.append('<div id="vertical-name-' + i.toString() + '" class="vertical_name ab"> </div>')
 		.append('<div id="sub-content-' + i.toString() + '" class="subcontent"> </div>')
-		.append('<div id="exit-options-' + i.toString() + '" class="exit_options"> </div>');
+		.append('<div id="exit-options-' + i.toString() + '" class="exit_options ab"> </div>');
 
 		$("#fillpage-" + i.toString()).hide();
-		$("#vertical-name-" + i.toString()).append('<p class="'+ rot  + ' bot_line">' + bookmarksArray[i] + '</p>');
-		$("#exit-options-" + i.toString()).append('<button id="close-button-' + i.toString() + '" class="transparent-button"><img src="img/close.svg" class="contact-icon"/></button>');
+		$("#vertical-name-" + i.toString()).append('<p class="rotate90">' + bookmarksArray[i] + '</p>');
+		$("#exit-options-" + i.toString()).append('<button id="close-button-' + i.toString() + '" class="transparent"><img src="img/close.svg" class="contact-icon"/></button>');
 	}
-
-	$("#sub-content-0").append('<p class="big-font"> Hi! I\'m <b class="name-emphasis">Vivek!</b> I\'m an aerospace engineer with a passion for programming. I spend a lot of time solving problems that I think I could never solve and then take joy in proving me wrong. I\'m a very curious guy, and I\'m always open to learn anything new that I can apply it to my advantage. All the success I had in my life comes from strong willpower and determination, which makes me a firm believer of the proverb: <br><em>Where there\'s a will, there\'s a way!</em></p>');
-
-
-
-
 	$("#close-button-0").click( () => {
 		$("#fillpage-0").hide();
 		$("#main-container").show();
