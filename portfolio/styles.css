@@ -10,7 +10,7 @@
 
 	background-color: white;
 	background-image: url('img/bg.svg');
-	background-repeat: no-repeat;
+	background-repeat: repeat;
 	background-size: cover;
 	font-family: "Roboto", "Noto Sans", sans-serif;
 	color: var(--text-black);
@@ -55,11 +55,13 @@ p, li, h1, h2, h3, h4{
 
 }
 .plus-button:hover{
-	background-color: #E2F0CB;
+	opacity: 1;
+	background: url("img/skills/hamburger_open.svg") no-repeat;
 	transition: 0.3s;
 }
 .plus-button:active{
-	background-color: #C7CEEA;
+	opacity: 1;
+	background: url("img/skills/hamburger.svg") no-repeat;
 	transition: 0.3s;
 }
 .rotate90 {
@@ -91,6 +93,9 @@ p, li, h1, h2, h3, h4{
 	white-space: nowrap;
 }
 
+.subcontent{
+	margin: 10px;
+}
 #sub-content-1{
 	display: flex;
 	flex-direction: column;
@@ -98,9 +103,44 @@ p, li, h1, h2, h3, h4{
 #progLangHeader{
 	color : white;
 }
+#chessHeader{
+	color : white;
+}
+#musicHeader{
+	color : white;
+}
+.white-text{
+	color : white;
+}
+#hobby-main-container{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin: auto;
+	justify-content: center;
+	align-items: center;
+	justify-self: center;
+}
+#hobby-container1{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+.nice-size{
+	max-width: 300px;
+}
 #progLangContainer{
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
+}
+#progToolHeader{
+	color : white;
+}
+#progToolContainer{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
 }
 
 .good-size{
@@ -109,12 +149,13 @@ p, li, h1, h2, h3, h4{
 }
 
 .plus-button {
-	border: 2px solid lightgrey;
-	background-color: #FF9AA2;
+	border: none;
+	background-color: black;
+	opacity: 0.5;
+	background: url("img/skills/hamburger.svg") no-repeat;
 	font-size: 16px;
 	height: 2.5em;
 	width: 2.5em;
-	border-radius: 999px;
 	position: relative;
 
 	&:after,
@@ -148,7 +189,7 @@ p, li, h1, h2, h3, h4{
 }
 .top-right{
 	position: fixed;
-	top: 0;
+	top: 10px;
 }
 #about-container:hover{
 	 /*background-image: linear-gradient(45deg, var(--olive), var(--powder-blue));*/
@@ -190,8 +231,6 @@ p, li, h1, h2, h3, h4{
 	max-width: 200px;
 	border-radius: 500px;
 	border: solid var(--text-black) 2px;
-}
-.subcontent{
 }
 .fade-in{
   animation: fadeIn 0.5s;
@@ -261,11 +300,14 @@ p, li, h1, h2, h3, h4{
 .transparent-button{
 	background-color: transparent;
 	border: none;
+	margin: 10px;
 }
 .big-font{
 	font-size: 32px;
 	color: white;
-	text-align: center;
+}
+.huge-font{
+	font-size: 75px;
 }
 #resume-icon:hover{
 	opacity: 1;
@@ -424,5 +466,19 @@ p, li, h1, h2, h3, h4{
 		transition: 0.1s;
 		z-index: 0;
 	}
-
+	.big-font{
+		font-size: 25px;
+	}
+	.exit_options{
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+		order: -1;
+	}
+	.fillpage{
+		justify-content : flex-start;
+	}
+	#hobby-main-container{
+		flex-direction: column;
+	}
 }
