@@ -159,8 +159,11 @@ $(document).ready( ()=>{
 	$("#progToolContainer").append('<img class="skill6 good-size" src="img/skills/freecad.svg" />');
 	$("#progToolContainer").append('<img class="skill7 good-size" src="img/skills/inkscape.svg" />');
 	$("#progToolContainer").append('<img class="skill8 good-size" src="img/skills/gimp.svg" />');
+	$("#progToolContainer").append('<img class="skill9 good-size" src="img/skills/qt.svg" />');
+	$("#progToolContainer").append('<img class="skill10 good-size" src="img/skills/glade.svg" />');
 
 
+	$("#sub-content-2").append('<p class="white-text">Contributing to Open Source softwares has immensely helped me to gain more insight about the extent and nature of work that goes into software development. Through every single contribution, I get better at reading and understanding codebases and coming up with better solutions. It continues to improve my code quality as well as confidence to write better programs.</p>');
 	$("#sub-content-2").append('<img class="skill0 good-size" src="img/skills/xournalpp.svg" />');
 	$("#sub-content-2").append('<img class="skill0 good-size" src="img/skills/zim.svg" />');
 	$("#sub-content-2").append('<img class="skill0 good-size" src="img/skills/stockfish.svg" />');
