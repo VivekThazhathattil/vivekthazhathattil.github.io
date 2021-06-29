@@ -1,6 +1,6 @@
 let plus_button_clicked = false;
 const pastelColors = [ "#31BFF3", "#A484E9", "#F4889A", "#FFAF68", "#F6E683", "#79D45E" ];
-const bookmarksArray = [ "About Me!", "Skills", "Open Source Contributions", "Interests, Hobbies", "Blog" ];
+const bookmarksArray = [ "About Me!", "Skills", "Open Source Activity", "Interests, Hobbies", "Blog" ];
 
 window.transitionToPage = function(href) {
     document.querySelector('body').style.opacity = 0
@@ -11,7 +11,6 @@ window.transitionToPage = function(href) {
 
 function plusClick(){
 	plus_button_clicked = !plus_button_clicked;
-	console.log(plus_button_clicked);
 	if(plus_button_clicked){
 		doPlusClickedAction();
 	}
@@ -32,7 +31,6 @@ function init(){
 	const bookmarkContainerX = plus_button.offsetLeft + plus_button.offsetWidth;
 	const bookmarkContainerY = plus_button.offsetTop;
 
-	console.log(bookmarkContainerY, bookmarkContainerX);
 	$("#bookmark-container").css({
 		"position": "fixed",
 		"top" : bookmarkContainerY,
@@ -100,7 +98,7 @@ $(document).ready( ()=>{
 		var body = document.body,
     html = document.documentElement;
 
-		var h= Math.max( body.scrollHeight, body.offsetHeight,
+		var h= Math.max( $(window).height(), body.scrollHeight, body.offsetHeight,
                        html.clientHeight, html.scrollHeight, html.offsetHeight );
 		var w= Math.max( body.scrollWidth, body.offsetWidth,
                        html.clientWidth, html.scrollWidth, html.offsetWidth );
@@ -110,15 +108,16 @@ $(document).ready( ()=>{
 			h = "auto";
 			w = "auto";
 		}
+		console.log(h, w);
 
-		console.log($(window).width());
+		//console.log($(window).width());
 			$(main).append('<div id="fillpage-' + i.toString() + '" class="fillpage"></div>');
 			$("#fillpage-" + i.toString()).css({
 				"position" : "absolute",
 				"top" : "0",
 				"left" : "0",
-				"height" : h,
-				"width" : w,
+				"min-height" : h,
+				"min-width" : w,
 				"display" : "flex",
 				"flex-direction" : disp,
 				"justify-content" : "space-between",
@@ -128,6 +127,8 @@ $(document).ready( ()=>{
 		.append('<div id="vertical-name-' + i.toString() + '" class="vertical_name"> </div>')
 		.append('<div id="sub-content-' + i.toString() + '" class="subcontent"> </div>')
 		.append('<div id="exit-options-' + i.toString() + '" class="exit_options"> </div>');
+
+		console.log($("#fillpage-"+i.toString()).css("min-height"));
 
 		$("#fillpage-" + i.toString()).hide();
 		$("#vertical-name-" + i.toString()).append('<p class="'+ rot  + ' bot_line">' + bookmarksArray[i] + '</p>');
@@ -193,7 +194,9 @@ $(document).ready( ()=>{
 		$("#main-container").show();
 	});
 	$("#bookmark-0").click( ()=>{ 
-		$("#fillpage-0").slideDown("normal", ()=>{
+		const minH = $("#fillpage-0").css("min-height");
+		$("#fillpage-0").css("min-height",0).slideDown("normal", ()=>{
+			$("#fillpage-0").css('min-height',minH);
 			$("#fillpage-0").show();
 			$("#main-container").hide();
 			$("#popup-container").hide();
@@ -206,7 +209,9 @@ $(document).ready( ()=>{
 		$("#main-container").show();
 	});
 	$("#bookmark-1").click( ()=>{ 
-		$("#fillpage-1").slideDown("normal", ()=>{
+		const minH = $("#fillpage-1").css("min-height");
+		$("#fillpage-1").css("min-height",0).slideDown("normal", ()=>{
+			$("#fillpage-1").css('min-height',minH);
 			$("#fillpage-1").show();
 			$("#main-container").hide();
 			$("#popup-container").hide();
@@ -219,7 +224,9 @@ $(document).ready( ()=>{
 		$("#main-container").show();
 	});
 	$("#bookmark-2").click( ()=>{ 
-		$("#fillpage-2").slideDown("normal", ()=>{
+		const minH = $("#fillpage-2").css("min-height");
+		$("#fillpage-2").css("min-height",0).slideDown("normal", ()=>{
+			$("#fillpage-2").css('min-height',minH);
 			$("#fillpage-2").show();
 			$("#main-container").hide();
 			$("#popup-container").hide();
@@ -232,7 +239,9 @@ $(document).ready( ()=>{
 		$("#main-container").show();
 	});
 	$("#bookmark-3").click( ()=>{ 
-		$("#fillpage-3").slideDown("normal", ()=>{
+		const minH = $("#fillpage-3").css("min-height");
+		$("#fillpage-3").css("min-height",0).slideDown("normal", ()=>{
+			$("#fillpage-3").css('min-height',minH);
 			$("#fillpage-3").show();
 			$("#main-container").hide();
 			$("#popup-container").hide();
@@ -245,7 +254,9 @@ $(document).ready( ()=>{
 		$("#main-container").show();
 	});
 	$("#bookmark-4").click( ()=>{ 
-		$("#fillpage-4").slideDown("normal", ()=>{
+		const minH = $("#fillpage-4").css("min-height");
+		$("#fillpage-4").css("min-height",0).slideDown("normal", ()=>{
+			$("#fillpage-4").css('min-height',minH);
 			$("#fillpage-4").show();
 			$("#main-container").hide();
 			$("#popup-container").hide();
