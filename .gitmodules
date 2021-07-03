@@ -4,3 +4,6 @@
 [submodule "Ozhukk"]
 	path = Ozhukk
 	url = https://github.com/VivekThazhathattil/Ozhukk
+[submodule "chess-blindfold-trainer"]
+	path = chess-blindfold-trainer
+	url = https://github.com/VivekThazhathattil/chess-blindfold-trainer
