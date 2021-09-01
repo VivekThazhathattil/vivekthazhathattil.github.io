@@ -1,6 +1,8 @@
 This is the repo for my personal webpage (currently under construction)
 
-[portfolio](./portfolio/)
+[portfolio](./portfolio/) (still in progress :D )
+
+[old-portfolio-02092021](./old_portfolio_02092021/)
 
 [blindfold-chess-trainer](./chess-blindfold-trainer/)
 
