@@ -1,0 +1,301 @@
+/* global */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+:root{
+    --clr-neutral-900: hsl(207, 19%, 9%);
+    --clr-neutral-100: hsl(0, 0%, 100%);
+    --clr-accent-400: hsl(142, 90%, 61%);
+}
+
+.projects_header{
+    font-size: 2.1rem;
+    padding: 5%;
+}
+
+.grid-2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #101214;
+    color: #7A7C80;
+
+}
+
+.icon{
+	width: 20%;
+	height: 20%;
+}
+
+.proj_img{
+    max-width: 40px;
+    max-height: 20px;
+}
+
+h2,.white{
+    color: #fff;
+}
+
+a{
+    color: #7A7C80;
+    text-decoration: none;
+}
+/* section 1 */
+.section-1{
+    padding-top: 40vh;
+    text-align: center;
+}
+
+.section-1 p{
+    font-size: 1.1rem;
+    padding-bottom: 10px;
+    margin:0;
+}
+
+.section-1 h2{
+    font-size: 2.9rem;
+    margin-bottom: 10px;
+}
+
+.section-1 a{
+    font-size: 1.5rem;
+    padding: 10px;
+}
+/* section 2 */
+.section-2{
+    padding-top: 10vh;
+    width: 70%;
+}
+
+.section-2 h2{
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+}
+
+.section-2 p{
+    font-size: 1.1rem;
+    padding-bottom: 10px;
+    margin:0;
+}
+
+.section-3{
+    padding-left: 5vw;
+    width: 70%;
+}
+
+.section-3 h2{
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+}
+
+.section-3 p{
+    font-size: 1.1rem;
+    padding-bottom: 10px;
+    margin:0;
+}
+
+.section-4{
+    width: 70%;
+}
+
+.section-4 h2{
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+}
+
+.section-4 p{
+    font-size: 1.1rem;
+    padding-bottom: 10px;
+    margin:0;
+}
+
+.avatar{
+	width: 30%;
+	height: 25%;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+.card{
+    color: var(--clr-neutral-100);
+    background-size: cover;
+    padding: 10rem 0 0;
+    max-width: 50ch;
+    border-radius: 1rem;
+    box-shadow: 10px 10px 15px 0 rgba(0,0,0,0.2);
+    transition: 0.2s;
+}
+
+.card:hover, .card:focus{
+    transform: scale(1.05);
+}
+
+#vtol{
+    background-image: url(img/bg/vtol.png);
+}
+
+#vismartcab{
+    background-image: url(img/bg/smartcab.png);
+} 
+
+#blindfoldchess{
+    background-image: url(img/bg/blindfold_chess_trainer.png);
+} 
+
+#mnemopy{
+    background-image: url(img/bg/mnemopy.png);
+} 
+
+#chalachithram{
+    background-image: url(img/bg/chalachithram.png);
+} 
+
+#candlesticks{
+    background-image: url(img/bg/candlesticks.png);
+} 
+
+#dekadico{
+    background-image: url(img/bg/dekadico.png);
+} 
+
+#cricket{
+    background-image: url(img/bg/cricket.png);
+} 
+
+#fen2img{
+    background-image: url(img/bg/fen2img.png);
+} 
+
+#ozhukk{
+    background-image: url(img/bg/ozhukk.png);
+} 
+
+#markdown{
+    background-image: url(img/bg/markdown.png);
+} 
+
+
+.card:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card-content{
+    --padding: 1.5rem;
+    padding: var(--padding);
+    background: linear-gradient( 
+        hsl(0 0% 0% / 0),
+        hsl(20 0% 0% / 0.3) 10%,
+        hsl(0 0% 0% / 1)
+    );
+    border-radius: 1rem;
+}
+
+.card-title{
+    position: relative;
+    width: max-content;
+}
+
+.card-title::after{
+    content: "";
+    position: absolute;
+    height: 4px;
+    left: calc(var(--padding) * -1);
+    bottom: 0;
+    width: calc(100% + var(--padding));
+    background: var(--clr-accent-400);
+}
+
+.card-body{
+    color: rgb(255, 255, 255 / 0.8);
+}
+.button-array{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 50%;
+}
+.button{
+    cursor: pointer;
+    text-decoration: none;
+    color:white;
+    background-color: var(--clr-accent-400);
+    padding: 0.5em 1.25em;
+    border-radius: 0.25em;
+    margin: 10px;
+    box-shadow: inset 0 0 0 0 #f9e506;
+    transition: ease-out 0.3s;
+    outline: none;
+}
+
+.button:hover{
+    box-shadow: inset 300px 0 0 0 #f9e506;
+    color: black;
+}
+
+.button:hover,
+.button:focus{
+background-color: var(--clr-neutral-100);
+}
+
+.section-2 a{
+    display: block;
+    padding: 5px;
+    font-size: 1.2rem;
+    padding-left: 0;
+    width: 100px;
+}
+/* animations / utilities */
+.section-2 a:hover{
+    font-size: 1.3rem;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.section-1 a:hover{
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.white:hover{
+    position: relative;
+    padding-left: 10px;
+}
+
+/* media queres */
+@media(max-width:780px){
+    .grid-2{
+        grid-template-columns: 1fr;
+    }
+    .section-1{
+        padding:0;
+        padding-top: 5rem;
+        width: auto;
+    }
+    .section-2{
+        padding: 0;
+        padding-top: 2rem;
+        margin: 10px 10px 10px 10px;
+        width: auto;
+    }
+    .section-3{
+        padding: 0;
+        padding-top: 2rem;
+        margin: 10px 10px 10px 10px;
+        width: auto;
+    }
+    .section-4{
+        padding: 0;
+        padding-top: 2rem;
+        margin: 10px 10px 10px 10px;
+        width: auto;
+    }
+}
