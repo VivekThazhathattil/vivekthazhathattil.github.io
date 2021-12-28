@@ -1,4 +1,4 @@
-.main-section{
+body{
   font-family: Arial;
   padding: 20px;
   background: #f1f1f1;
@@ -14,7 +14,7 @@ p{
 
 @media (max-width: 780px)
 {
- .main-section{
+body{
   width: 90%;
   margin: auto;
  }
