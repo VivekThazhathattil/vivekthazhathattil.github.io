@@ -1,26 +1,30 @@
-body{
+body {
   font-family: Arial;
   padding: 20px;
   background: #f1f1f1;
   line-height: 30px;
-  width:60%;
+  width: 60%;
   margin: auto;
   font-size: 1rem;
 }
 
-.tags{
-color: #C70039;
+.tags {
+  color: #c70039;
 }
 
-p{
+.subtitle {
+  line-height: 1rem;
+  color: #444445;
+  width: 60%;
+}
+
+p {
   color: #444445;
 }
 
-@media (max-width: 780px)
-{
-body{
-  width: 90%;
-  margin: auto;
- }
-
+@media (max-width: 780px) {
+  body {
+    width: 90%;
+    margin: auto;
+  }
 }
