@@ -18,7 +18,8 @@ body {
   width: 60%;
 }
 
-p {
+p,
+pre {
   color: #444445;
 }
 
