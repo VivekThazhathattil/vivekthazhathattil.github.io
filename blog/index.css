@@ -8,6 +8,14 @@ body {
   font-size: 1rem;
 }
 
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 5px;
+}
+
 .tags {
   color: #c70039;
 }
