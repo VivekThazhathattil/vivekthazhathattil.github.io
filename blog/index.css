@@ -40,4 +40,7 @@ pre {
     width: 90%;
     margin: auto;
   }
+  img {
+    max-width: 90vw;
+  }
 }
