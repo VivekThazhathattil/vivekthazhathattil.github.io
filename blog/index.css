@@ -20,6 +20,10 @@ td {
   color: #c70039;
 }
 
+details {
+  cursor: pointer;
+}
+
 .subtitle {
   line-height: 1rem;
   color: #444445;
