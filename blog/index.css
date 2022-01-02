@@ -34,6 +34,10 @@ p,
 pre {
   color: #444445;
 }
+p::first-letter {
+  font-size: 150%;
+  color: #373738;
+}
 
 @media (max-width: 780px) {
   body {
