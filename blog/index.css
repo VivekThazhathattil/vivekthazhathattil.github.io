@@ -81,17 +81,18 @@ details {
 p,
 pre {
   color: #444445;
+}
+
+pre {
+  border: solid 2px #c0c0c0;
+  border-radius: 15px;
+  padding: 5px;
   overflow-x: auto !important;
   white-space: pre-wrap !important; /* Since CSS 2.1 */
   white-space: -moz-pre-wrap !important; /* Mozilla, since 1999 */
   white-space: -pre-wrap !important; /* Opera 4-6 */
   white-space: -o-pre-wrap !important; /* Opera 7 */
   word-wrap: break-word !important; /* Internet Explorer 5.5+ */
-}
-
-pre {
-  border: solid 2px #c0c0c0;
-  padding: 5px;
 }
 
 p::first-letter {
