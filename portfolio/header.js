@@ -3,7 +3,7 @@ $(document).ready(function() {
     const pathExploded = path.split('/');
     var directoryName = pathExploded[pathExploded.length - 2];
     if(directoryName == "experience" || directoryName == "blog" || directoryName == "about" || directoryName == "contact" || directoryName == "portfolio"){
-        if(pathExploded[pathExploded.length - 3] == "portfolio")
+        if(pathExploded.indexOf("portfolio") == pathExploded.lastIndexOf("portfolio"))
             directoryName = "";
         else
             directoryName = "../"
