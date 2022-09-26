@@ -2,7 +2,10 @@ $(document).ready(function() {
     const path = (window.location.pathname);
     const pathExploded = path.split('/');
     var directoryName = pathExploded[pathExploded.length - 2];
-    directoryName = directoryName != "src" ? "../" : "";
+    if(directoryName == "experience" || directoryName == "blog" || directoryName == "about" || directoryName == "contact" || directoryName == "portfolio")
+        directoryName = "../"
+    else
+        directoryName = "";
 
     let appFooter = `
 		<div class="foot">
