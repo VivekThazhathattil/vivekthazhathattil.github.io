@@ -2,14 +2,11 @@ $(document).ready(function() {
     const path = (window.location.pathname);
     const pathExploded = path.split('/');
     var directoryName = pathExploded[pathExploded.length - 2];
-    if(directoryName == "experience" || directoryName == "blog" || directoryName == "about" || directoryName == "contact" || directoryName == "portfolio"){
-        if(pathExploded.indexOf("portfolio") == pathExploded.lastIndexOf("portfolio"))
-            directoryName = "";
-        else
+    if(directoryName == "experience" || directoryName == "blog" || directoryName == "about" || directoryName == "contact" || directoryName == "portfolio_")
             directoryName = "../"
-    }
     else
         directoryName = "";
+
     let appFooter = `
 		<div class="foot">
 			<div class="links">
@@ -22,7 +19,7 @@ $(document).ready(function() {
 						<p><i class="icon icon-flickr">&#xe809;</i></p>
 						<p><span>EXPERIENCE</span></p>
 					</a>
-					<a href="${directoryName}portfolio/index.html" class="icon-link">
+					<a href="${directoryName}portfolio_/index.html" class="icon-link">
 						<p><i class="icon icon-flickr">&#xe806;</i></p>
 						<p><span>PORTFOLIO</span></p>
 					</a>

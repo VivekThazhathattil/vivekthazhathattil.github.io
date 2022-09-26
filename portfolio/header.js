@@ -2,12 +2,8 @@ $(document).ready(function() {
     const path = (window.location.pathname);
     const pathExploded = path.split('/');
     var directoryName = pathExploded[pathExploded.length - 2];
-    if(directoryName == "experience" || directoryName == "blog" || directoryName == "about" || directoryName == "contact" || directoryName == "portfolio"){
-        if(pathExploded.indexOf("portfolio") == pathExploded.lastIndexOf("portfolio"))
-            directoryName = "";
-        else
+    if(directoryName == "experience" || directoryName == "blog" || directoryName == "about" || directoryName == "contact" || directoryName == "portfolio_")
             directoryName = "../"
-    }
     else
         directoryName = "";
 
@@ -19,7 +15,7 @@ $(document).ready(function() {
     				<a id="nav-experience" href="${directoryName}experience/index.html">
     					Experience
     				</a>
-    				<a id="nav-portfolio" href="${directoryName}portfolio/index.html">
+    				<a id="nav-portfolio" href="${directoryName}portfolio_/index.html">
     					Portfolio
     				</a>
     				<a id="nav-blog" href="${directoryName}blog/index.html">
