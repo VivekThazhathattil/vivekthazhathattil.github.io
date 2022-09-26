@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    	<title>
+            Contact | Vivek T
+    	</title>
+    	<link rel="stylesheet" href="../style.css">
+    	<link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-touch-icon.png">
+    	<link rel="icon" type="image/png" sizes="32x32" href="/icon/favicon-32x32.png">
+    	<link rel="icon" type="image/png" sizes="16x16" href="/icon/favicon-16x16.png">
+    	<link rel="manifest" href="/icon/manifest.json">
+    	<link rel="mask-icon" href="/icon/safari-pinned-tab.svg" color="#61cae9">
+    	<link rel="shortcut icon" href="/icon/favicon.ico">
+    	<link href="https://fonts.googleapis.com/css?family=Assistant" rel="stylesheet">
+    	<meta name="msapplication-config" content="/icon/browserconfig.xml">
+    	<meta name="theme-color" content="#ffffff">
+    	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <script defer src="../script/jquery.js"></script>
+        <script defer src="../header.js"></script>
+        <script defer src="../footer.js"></script>
+    </head>
+	<body>
+        <header id="app-header"></header>
+		<div class="head">
+			<div class="title-section">
+				<h1>
+					Contact Me
+				</h1>
+				<p>
+					Got an idea? Let's get in touch.
+				</p>
+			</div>
+		</div>
+		<div class="body">
+			<div class="section contact">
+				<div>
+					<div class="card">
+						<div class="left big-mobile">
+							<form class="contact">
+								<span id="name-label" class="contact-label">Name</span><br>
+								<input type="input" id="name" class="input textbox" placeholder="Bruce Wayne" />
+
+								<span id="email-label" class="contact-label">Email</span><br>
+								<input type="input" id="email" class="input textbox" placeholder="batman321@hotmail.com" />
+
+								<span id="message-label" class="contact-label">Message</span><br>
+								<textarea id="message" rows="8" class="input textbox" placeholder="You look great today."></textarea>
+
+								<input type="button" value="Send" id="send" class="input button"/>
+
+								<span id="no-name-no-email">You didn't put your name or your email address. Send anyways?</span>
+								<span id="no-name">You didn't put your name. Send anyways?</span>
+								<span id="no-email">You didn't put an email address. Send anyways?</span>
+								<span id="bad-email">Your email address doesn't look right. Send anyways?</span>
+								<input type="button" value="Cancel" id="send-no" class="input button yesno"/>
+								<input type="button" value="Send" id="send-yes" class="input button yesno"/>
+							</form>
+						</div>
+						<div class="right">
+							<div class="contact mobile-padding container-container">
+								<div class="container">
+									<p>
+										<a class="contact-link gap" href="mailto:kristian@kristianwindsor.com">
+											<i class="icon icon-mail">&#xe802;</i>
+											vivek.thazhathattil@gmail.com
+										</a>
+									</p>
+									<p>
+										<a class="contact-link gap" href="tel:14086834007">
+											<i class="icon icon-phone">&#xe803;</i>
+											+91-9151619496
+										</a>
+									</p>
+									<p>
+										<a class="contact-link" href="https://www.google.com/maps/place/San+Jose,+CA/" target="_blank">
+											<i class="icon icon-location">&#xe801;</i>
+											Bangalore, Karnataka
+										</a>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="content" id="submitted">
+					<p>
+						<span class="big">Thanks<span id="firstName"></span>! </span><span class="green">Your message has been submitted.</span>
+					</p>
+					<p>
+						I'll get back to you as soon as I can.
+					</p>
+				</div>
+			</div>
+		</div>
+    <footer id="app-footer"></footer>
+	</body>
+</html>
