@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vivek Thazhathattil | Doctoral Student & Researcher</title>
+    <meta name="description"
+        content="Academic profile of Vivek Thazhathattil, Doctoral student at the Department of Aerospace Engineering, IISc Bangalore.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<body class="light-theme">
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">Vivek Thazhathattil</a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#expertise">Expertise</a>
+                <a href="#publications">Research</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <button id="theme-toggle" aria-label="Toggle dark mode">
+                <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="5" />
+                    <line x1="12" y1="1" x2="12" y2="3" />
+                    <line x1="12" y1="21" x2="12" y2="23" />
+                </svg>
+                <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <header class="hero section">
+        <div class="container">
+            <h1 class="hero-title">Vivek Thazhathattil</h1>
+            <p class="hero-subtitle">Doctoral Student, Department of Aerospace Engineering<br>Indian Institute of
+                Science, Bangalore</p>
+            <div class="hero-cta">
+                <a href="https://scholar.google.com/citations?user=eCdc2vYAAAAJ&hl=en" class="btn btn-primary">Google
+                    Scholar</a>
+                <a href="https://github.com/VivekThazhathattil" class="btn btn-secondary">GitHub Profile</a>
+            </div>
+        </div>
+    </header>
+
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About</h2>
+            <div class="card">
+                <p>I am a Doctoral student at the Indian Institute of Science (IISc), Bangalore, specializing in
+                    <strong>Data-driven modelling</strong> and <strong>Complex systems theory</strong> within the
+                    Aerospace domain. My work focuses on uncovering the underlying physics of complex fluid flows
+                    through advanced computational methods and network theory.
+                </p>
+                <p style="margin-top: 20px;">I have extensive experience in high-performance computing, specifically
+                    developing and managing in-house <strong>CFD (LES/DNS) solvers primarily written in C</strong>. My
+                    technical
+                    contributions include implementing rotating overlapping meshes, periodic boundary conditions, and
+                    interfacing solvers with chemical kinetics libraries like <strong>Cantera</strong>.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="expertise" class="section">
+        <div class="container">
+            <h2 class="section-title">Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-category card">
+                    <h3>Aerospace & CFD</h3>
+                    <ul>
+                        <li>In-house LES/DNS Solver development (C)</li>
+                        <li>Rotating & Overlapping Mesh implementation</li>
+                        <li>Compressor Cascade & Turbomachinery flows</li>
+                        <li>Aeroacoustic Source Localization</li>
+                        <li>HPC Cluster Management</li>
+                    </ul>
+                </div>
+                <div class="skill-category card">
+                    <h3>Data-driven flow analysis</h3>
+                    <ul>
+                        <li>Complex Network Analysis (CNA)</li>
+                        <li>Information Theoretical methods</li>
+                        <li>Linear Stability Analysis (LSA)</li>
+                        <li>Data-driven Wavemaker Identification</li>
+                        <li>Large-scale Flow Dataset Processing</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="publications" class="section">
+        <div class="container">
+            <h2 class="section-title">Research</h2>
+            <div class="publications-list">
+                <!-- Multi-cylinder Paper -->
+                <div class="pub-item card">
+                    <span class="pub-date">2026</span>
+                    <div class="pub-content">
+                        <h3>Unsteady Wake Dynamics in Multi-Cylinder Arrays</h3>
+                        <p class="pub-abstract">Using <strong>Large-Eddy Simulation (LES)</strong> at Re = 10,000 to
+                            determine flow evolution past side-by-side cylinders. Complex network analysis identifies
+                            the location and spatial extent of flow regions governing unsteady wake dynamics,
+                            distinguishing between asymmetric gap flows and symmetric shedding patterns.</p>
+                        <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=eCdc2vYAAAAJ&citation_for_view=eCdc2vYAAAAJ:zYLM7Y9cAGgC"
+                            class="text-link">Read Publication →</a>
+                    </div>
+                </div>
+
+                <!-- Aeroacoustics Paper -->
+                <div class="pub-item card">
+                    <span class="pub-date">2024</span>
+                    <div class="pub-content">
+                        <h3>Aeroacoustic Source Localization in Turbulent Jets</h3>
+                        <p class="pub-abstract">We propose a data-driven approach for noise source localization using
+                            <strong>Transfer Entropy (TE)</strong>. Applied to a Mach 3.0 turbulent jet at Re = 7.5M,
+                            this information-theoretic measure helps identify acoustic sources corresponding to pressure
+                            oscillations, validated against experimental measurements and FW-H analogy predictions.
+                        </p>
+                        <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=eCdc2vYAAAAJ&citation_for_view=eCdc2vYAAAAJ:d1gkVwhDpl0C"
+                            class="text-link">Read Publication →</a>
+                    </div>
+                </div>
+
+                <!-- PVC Paper -->
+                <div class="pub-item card">
+                    <span class="pub-date">2023 / 2024</span>
+                    <div class="pub-content">
+                        <h3>Wavemaker Identification in Swirling Flows</h3>
+                        <p class="pub-abstract">The precessing vortex core (PVC) oscillation is a self-excited flow
+                            instability associated with vortex breakdown. We assess a data-driven approach using
+                            <strong>Complex Network Analysis (CNA)</strong> to identify the wavemaker region. Networks
+                            constructed from <strong>LES velocity data</strong> use correlation and mutual information
+                            to identify network hubs, successfully characterizing internal feedback regions.
+                        </p>
+                        <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=eCdc2vYAAAAJ&citation_for_view=eCdc2vYAAAAJ:qjMakFHDy7sC"
+                            class="text-link">Read Publication →</a>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="https://scholar.google.com/citations?user=eCdc2vYAAAAJ&hl=en" class="text-link"
+                    style="font-weight: 600;">View all publications on Google Scholar</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Connect</h2>
+            <div class="contact-grid">
+                <a href="mailto:tvivek@iisc.ac.in" class="card contact-card">
+                    <h3>Academic Email</h3>
+                    <p>iisc.ac.in</p>
+                </a>
+                <a href="https://github.com/VivekThazhathattil" class="card contact-card">
+                    <h3>GitHub</h3>
+                    <p>Research & Code</p>
+                </a>
+                <a href="https://scholar.google.com/citations?user=eCdc2vYAAAAJ&hl=en" class="card contact-card">
+                    <h3>Google Scholar</h3>
+                    <p>View Academic Profile</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Vivek Thazhathattil. Academic Portfolio.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
