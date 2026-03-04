@@ -4,16 +4,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
     <title>Vivek Thazhathattil | Doctoral Student & Researcher</title>
-    <meta name="description"
-        content="Academic profile of Vivek Thazhathattil, Doctoral student at the Department of Aerospace Engineering, IISc Bangalore.">
+    <meta name="title" content="Vivek Thazhathattil | Doctoral Student & Researcher">
+    <meta name="description" content="Vivek Thazhathattil is a doctoral student at IISc Bangalore specializing in data-driven modelling, complex systems theory, and CFD. Previously at IIT Kanpur.">
+    <meta name="keywords" content="Vivek Thazhathattil, IISc, IIT Kanpur, Aerospace Engineering, CFD, LES, DNS, fluid dynamics, data-driven modelling, complex network analysis, transfer entropy, turbulence, combustion, Santosh Hemchandra">
+    <meta name="author" content="Vivek Thazhathattil">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://vivekthazhathattil.github.io/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="profile">
+    <meta property="og:url" content="https://vivekthazhathattil.github.io/">
+    <meta property="og:title" content="Vivek Thazhathattil | Doctoral Student & Researcher">
+    <meta property="og:description" content="Doctoral student at IISc Bangalore working on data-driven modelling of complex fluid flows, CFD solver development, and complex network analysis.">
+    <meta property="og:image" content="https://vivekthazhathattil.github.io/profile.jpg">
+    <meta property="profile:first_name" content="Vivek">
+    <meta property="profile:last_name" content="Thazhathattil">
+
+    <!-- Twitter / X Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:url" content="https://vivekthazhathattil.github.io/">
+    <meta name="twitter:title" content="Vivek Thazhathattil | Doctoral Student & Researcher">
+    <meta name="twitter:description" content="Doctoral student at IISc Bangalore working on data-driven modelling of complex fluid flows, CFD solver development, and complex network analysis.">
+    <meta name="twitter:image" content="https://vivekthazhathattil.github.io/profile.jpg">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Vivek Thazhathattil",
+        "url": "https://vivekthazhathattil.github.io/",
+        "image": "https://vivekthazhathattil.github.io/profile.jpg",
+        "jobTitle": "Doctoral Student",
+        "description": "Doctoral student at IISc Bangalore specializing in data-driven modelling, complex systems theory, and CFD solver development.",
+        "email": "tvivek@iisc.ac.in",
+        "birthPlace": {
+            "@type": "Place",
+            "name": "Calicut, Kerala, India"
+        },
+        "affiliation": {
+            "@type": "Organization",
+            "name": "Indian Institute of Science, Bangalore",
+            "url": "https://aero.iisc.ac.in/"
+        },
+        "alumniOf": [
+            {
+                "@type": "CollegeOrUniversity",
+                "name": "Indian Institute of Technology Kanpur",
+                "url": "https://www.iitk.ac.in/"
+            },
+            {
+                "@type": "CollegeOrUniversity",
+                "name": "Indian Institute of Science, Bangalore",
+                "url": "https://aero.iisc.ac.in/"
+            }
+        ],
+        "sameAs": [
+            "https://github.com/VivekThazhathattil",
+            "https://scholar.google.com/citations?user=eCdc2vYAAAAJ&hl=en",
+            "https://lichess.org/@/Vivek-T"
+        ],
+        "knowsAbout": [
+            "Computational Fluid Dynamics",
+            "Large-Eddy Simulation",
+            "Direct Numerical Simulation",
+            "Data-driven Modelling",
+            "Complex Network Analysis",
+            "Transfer Entropy",
+            "Aeroacoustics",
+            "Turbulence",
+            "Fluid-Structure Interaction"
+        ]
+    }
+    </script>
+
     <link rel="stylesheet" href="style.css">
     <style>
         body {
             background-color: #fdfdf6;
             background-image:
-                linear-gradient(to right, #b0c4de55 1px, transparent 1px),
-                linear-gradient(to bottom, #b0c4de55 1px, transparent 1px);
+                linear-gradient(to right, #b0c4de18 1px, transparent 1px),
+                linear-gradient(to bottom, #b0c4de18 1px, transparent 1px);
             background-size: 24px 24px;
         }
     </style>
@@ -121,7 +195,7 @@
         <section id="contact">
             <h2>Connect</h2>
             <div class="contact-grid">
-                <a href="mailto:tvivek@iisc.ac.in" class="contact-card">Academic Email</a>
+                <a href="/cdn-cgi/l/email-protection#087c7e617e6d634861617b6b26696b266166" class="contact-card">Academic Email</a>
                 <a href="https://github.com/VivekThazhathattil" class="contact-card">GitHub</a>
                 <a href="https://scholar.google.com/citations?user=eCdc2vYAAAAJ&hl=en" class="contact-card">Google
                     Scholar</a>
@@ -133,7 +207,7 @@
         </footer>
     </div>
 
-    <script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
         function calculateAge(today) {
             const dob = new Date(1997, 5, 6); // June 6, 1997 (months are 0-indexed)
             let age = today.getFullYear() - dob.getFullYear();
@@ -148,12 +222,4 @@
             .then(response => {
                 const serverDate = new Date(response.headers.get("Date"));
                 if (isNaN(serverDate.getTime())) throw new Error("Invalid date");
-                calculateAge(serverDate);
-            })
-            .catch(() => {
-                calculateAge(new Date());
-            });
-    </script>
-</body>
-
-</html>
+                calculate
