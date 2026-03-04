@@ -124,14 +124,26 @@
     </div>
 
     <script>
-        const dob = new Date(1997, 5, 6); // June 6, 1997 (months are 0-indexed)
-        const today = new Date();
-        let age = today.getFullYear() - dob.getFullYear();
-        const hasBirthdayPassed = today.getMonth() > dob.getMonth() ||
-            (today.getMonth() === dob.getMonth() && today.getDate() >= dob.getDate());
-        if (!hasBirthdayPassed) age--;
-        if (age < 26 || age > 32) age = 28;
-        document.getElementById("age").textContent = age;
+        function calculateAge(today) {
+            const dob = new Date(1997, 5, 6); // June 6, 1997 (months are 0-indexed)
+            let age = today.getFullYear() - dob.getFullYear();
+            const hasBirthdayPassed = today.getMonth() > dob.getMonth() ||
+                (today.getMonth() === dob.getMonth() && today.getDate() >= dob.getDate());
+            if (!hasBirthdayPassed) age--;
+            if (!Number.isFinite(age) || isNaN(age) || age < 27 || age > 30) age = 28;
+            document.getElementById("age").textContent = age;
+        }
+
+        fetch("https://api.github.com")
+            .then(response => {
+                const serverDate = new Date(response.headers.get("Date"));
+                if (isNaN(serverDate.getTime())) throw new Error("Invalid date");
+                calculateAge(serverDate);
+            })
+            .catch(() => {
+                // Fallback to local time if GitHub API is unreachable or returns bad data
+                calculateAge(new Date());
+            });
     </script>
 </body>
 
