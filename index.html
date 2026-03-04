@@ -8,6 +8,15 @@
     <meta name="description"
         content="Academic profile of Vivek Thazhathattil, Doctoral student at the Department of Aerospace Engineering, IISc Bangalore.">
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: #fdfdf6;
+            background-image:
+                linear-gradient(to right, #b0c4de55 1px, transparent 1px),
+                linear-gradient(to bottom, #b0c4de55 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+    </style>
 </head>
 
 <body>
@@ -142,7 +151,6 @@
                 calculateAge(serverDate);
             })
             .catch(() => {
-                // Fallback to local time if GitHub API is unreachable or returns bad data
                 calculateAge(new Date());
             });
     </script>
