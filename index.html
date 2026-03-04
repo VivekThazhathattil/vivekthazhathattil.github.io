@@ -23,7 +23,7 @@
 
         <section id="about">
             <h2>About</h2>
-            <p>Hi! I'm Vivek — born and brought up in Calicut, a laid-back coastal city in Kerala. Malayalam
+            <p>Hi! I'm Vivek — a <span id="age"></span>-year-old born and brought up in Calicut, a laid-back coastal city in Kerala. Malayalam
                 (മലയാളം) is my mother tongue. I grew up curious about how things work, which somehow led me
                 all the way to fluid dynamics and supercomputers 😊.</p>
             <p>I'm currently a doctoral student at the <a href="https://aero.iisc.ac.in/" target="_blank"
@@ -81,8 +81,7 @@
                     <p class="pub-abstract">Using <strong>Large-Eddy Simulation (LES)</strong> at Re = 10,000 to
                         determine flow evolution past side-by-side cylinders. Complex network analysis identifies
                         the location and spatial extent of flow regions governing unsteady wake dynamics.</p>
-                    <a
-                        href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=eCdc2vYAAAAJ&citation_for_view=eCdc2vYAAAAJ:zYLM7Y9cAGgC">Read
+                    <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=eCdc2vYAAAAJ&citation_for_view=eCdc2vYAAAAJ:zYLM7Y9cAGgC">Read
                         Publication &rarr;</a>
                 </div>
 
@@ -92,8 +91,7 @@
                     <p class="pub-abstract">We propose a data-driven approach for noise source localization using
                         <strong>Transfer Entropy (TE)</strong>. Applied to a Mach 3.0 turbulent jet at Re = 7.5M.
                     </p>
-                    <a
-                        href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=eCdc2vYAAAAJ&citation_for_view=eCdc2vYAAAAJ:d1gkVwhDpl0C">Read
+                    <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=eCdc2vYAAAAJ&citation_for_view=eCdc2vYAAAAJ:d1gkVwhDpl0C">Read
                         Publication &rarr;</a>
                 </div>
 
@@ -102,8 +100,7 @@
                     <h3>Wavemaker Identification in Swirling Flows</h3>
                     <p class="pub-abstract">Assessment of a data-driven approach using <strong>Complex Network
                             Analysis (CNA)</strong> to identify critical regions driving unsteady dynamics.</p>
-                    <a
-                        href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=eCdc2vYAAAAJ&citation_for_view=eCdc2vYAAAAJ:qjMakFHDy7sC">Read
+                    <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=eCdc2vYAAAAJ&citation_for_view=eCdc2vYAAAAJ:qjMakFHDy7sC">Read
                         Publication &rarr;</a>
                 </div>
             </div>
@@ -114,7 +111,7 @@
         <section id="contact">
             <h2>Connect</h2>
             <div class="contact-grid">
-                <a href="/cdn-cgi/l/email-protection#ccb8baa5baa9a78ca5a5bfafe2adafe2a5a2" class="contact-card">Academic Email</a>
+                <a href="mailto:tvivek@iisc.ac.in" class="contact-card">Academic Email</a>
                 <a href="https://github.com/VivekThazhathattil" class="contact-card">GitHub</a>
                 <a href="https://scholar.google.com/citations?user=eCdc2vYAAAAJ&hl=en" class="contact-card">Google
                     Scholar</a>
@@ -123,3 +120,19 @@
 
         <footer>
             <p>&copy; 2026 Vivek Thazhathattil. Academic Portfolio.</p>
+        </footer>
+    </div>
+
+    <script>
+        const dob = new Date(1997, 5, 6); // June 6, 1997 (months are 0-indexed)
+        const today = new Date();
+        let age = today.getFullYear() - dob.getFullYear();
+        const hasBirthdayPassed = today.getMonth() > dob.getMonth() ||
+            (today.getMonth() === dob.getMonth() && today.getDate() >= dob.getDate());
+        if (!hasBirthdayPassed) age--;
+        if (age < 26 || age > 32) age = 28;
+        document.getElementById("age").textContent = age;
+    </script>
+</body>
+
+</html>
